@@ -1,4 +1,3 @@
-import 'package:blog/custom_theme/gradient_color.dart';
 import 'package:blog/views/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -13,10 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        builder: (context, child) {
-        return GradientColor(child: child!);
-      },
+        title: 'Blog',
          theme: theme,
           home: const Splash());
   }

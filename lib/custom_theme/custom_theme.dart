@@ -1,17 +1,17 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
-final colorScheme = ColorScheme.fromSeed(
-  onPrimary: const Color.fromARGB(255, 22, 22, 46),
-  onPrimaryContainer: const Color.fromARGB(255, 247, 247, 247),
-  brightness: Brightness.light,
-  seedColor: const Color.fromARGB(255, 247, 247, 247),
-  surface: const Color.fromARGB(255, 247, 247, 247),
-);
+// final colorScheme = ColorScheme.fromSeed(
+//   onPrimary: const Color.fromARGB(255, 22, 22, 46),
+//   onPrimaryContainer: const Color.fromARGB(255, 247, 247, 247),
+//   brightness: Brightness.light,
+//   seedColor: const Color.fromARGB(255, 247, 247, 247),
+//   // surface: const Color.fromARGB(255, 247, 247, 247),
+// );
 
 final theme = ThemeData().copyWith(
-    scaffoldBackgroundColor:Colors.transparent,
-    colorScheme: colorScheme,
+    // scaffoldBackgroundColor:Colors.transparent,
+    // colorScheme: colorScheme,
     drawerTheme: const DrawerThemeData(backgroundColor: Colors.white),
     listTileTheme: const ListTileThemeData(
       tileColor: Color.fromARGB(255, 247, 247, 247),
@@ -86,12 +86,12 @@ final theme = ThemeData().copyWith(
         // color: Colors.white.withOpacity(0.0),
         margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 0)),
     textTheme: GoogleFonts.ubuntuCondensedTextTheme().copyWith(
-      headlineLarge: GoogleFonts.lobster(
-          fontWeight: FontWeight.bold, color: colorScheme.primaryContainer),
+      // headlineLarge: GoogleFonts.lobster(
+      //     fontWeight: FontWeight.bold, color: colorScheme.primaryContainer),
       displaySmall: GoogleFonts.ubuntuCondensed(
           fontSize: 18, color: const Color.fromARGB(255, 51, 51, 52)),
-      displayLarge: GoogleFonts.lobster(
-          fontWeight: FontWeight.bold, color: colorScheme.onPrimaryContainer),
+      // displayLarge: GoogleFonts.lobster(
+      //     fontWeight: FontWeight.bold, color: colorScheme.onPrimaryContainer),
       displayMedium: GoogleFonts.ubuntuCondensed(
           fontSize: 24, fontWeight: FontWeight.w800, color: const Color.fromARGB(255, 51, 51, 52)),
       headlineMedium:
@@ -104,14 +104,14 @@ final theme = ThemeData().copyWith(
           fontSize: 16, color: const Color.fromARGB(255, 51, 51, 52)),
       // labelSmall: GoogleFonts.ubuntuCondensed(fontWeight: FontWeight.bold, color: Colors.white),
 
-      bodyMedium: GoogleFonts.ubuntuCondensed(
-          fontSize: 16, color: colorScheme.onPrimary),
+      // bodyMedium: GoogleFonts.ubuntuCondensed(
+      //     fontSize: 16, color: colorScheme.onPrimary),
       bodyLarge: GoogleFonts.ubuntuCondensed(
           fontSize: 24, fontWeight: FontWeight.w600, color: const Color.fromARGB(255, 51, 51, 52)),
-      titleSmall: GoogleFonts.ubuntuCondensed(
-          fontWeight: FontWeight.w600,
-          fontSize: 30,
-          color: colorScheme.onPrimary),
+      // titleSmall: GoogleFonts.ubuntuCondensed(
+      //     fontWeight: FontWeight.w600,
+      //     fontSize: 30,
+      //     color: colorScheme.onPrimary),
       titleMedium: GoogleFonts.ubuntuCondensed(
           fontWeight: FontWeight.bold,
           fontSize: 34,

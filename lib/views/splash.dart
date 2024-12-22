@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:blog/custom_widgets/custom_gradient.dart';
 import 'package:blog/views/auth.dart';
 import 'package:blog/views/home.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +32,7 @@ class _SplashState extends State<Splash> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return CustomGradientScaffold(
       body: SizedBox(
         width: double.infinity,
         height: double.infinity,

@@ -1,3 +1,4 @@
+import 'package:blog/custom_widgets/custom_gradient.dart';
 import 'package:blog/views/add_edit_blog.dart';
 import 'package:blog/views/blogs.dart';
 import 'package:blog/views/profile.dart';
@@ -21,7 +22,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return CustomGradientScaffold(
       body: SafeArea(
         child: Container(
             padding: const EdgeInsets.only(top: 16),

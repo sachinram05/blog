@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:blog/custom_widgets/custom_card.dart';
+import 'package:blog/custom_widgets/custom_gradient.dart';
 import 'package:blog/custom_widgets/custom_input.dart';
 import 'package:blog/models/user_model.dart';
 import 'package:blog/views/home.dart';
@@ -73,7 +74,7 @@ class _AuthState extends ConsumerState<Auth> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return CustomGradientScaffold(
         body: SafeArea(
       child: Container(
           width: double.infinity,

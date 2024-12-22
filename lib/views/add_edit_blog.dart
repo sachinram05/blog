@@ -1,6 +1,7 @@
 import 'package:blog/constants/blog_constant.dart';
 import 'package:blog/controllers/blog_controller.dart';
 import 'package:blog/custom_widgets/custom_card.dart';
+import 'package:blog/custom_widgets/custom_gradient.dart';
 import 'package:blog/custom_widgets/custom_input.dart';
 import 'package:blog/models/blog_model.dart';
 import 'package:flutter/material.dart';
@@ -97,9 +98,13 @@ class _AddEditBlogState extends ConsumerState<AddEditBlog> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return CustomGradientScaffold(
         // appBar: AppBar(),
-      body: SingleChildScrollView(
+      body: SafeArea(
+      child: SizedBox(
+          width: double.infinity,
+          height: double.infinity,
+          child: SingleChildScrollView(
         child:  Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -129,7 +134,6 @@ class _AddEditBlogState extends ConsumerState<AddEditBlog> {
                       ),
                      const  SizedBox(height: 20),
                         CustomInput(
-                      
                             labelName: "Blog Name",
                             textFormField: TextFormField(
                               initialValue: widget.isEditMode ? blogName : null,
@@ -213,6 +217,6 @@ class _AddEditBlogState extends ConsumerState<AddEditBlog> {
             ],
           ),
       ),
-    );
+       )) );
   }
 }
